@@ -1063,7 +1063,7 @@ router.get('/photooxy/naruto', async (req, res, next) => {
                         $(".thumbnail").find("img").each(function() {
                             h = $(this).attr("src")
                             var result = "https://photooxy.com/"+h
-                            fetch(encodeURI(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${result}&name=${randomTextNumber}`))
+                            fetch(encodeURI(`https://api.imgbb.com/1/upload?expiration=120&key=93c33d85c22e2d50489557509b784b4d&image=${result}&name=${randomTextNumber}`))
                                 .then(response => response.json())
                                 .then(data => {
                                     var urlnya = data.data.url,
